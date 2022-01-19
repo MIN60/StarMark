@@ -3,8 +3,7 @@ import './App.css';
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import './App.css';
-import { Dashboard } from './dashboard/dash.js';
-import { Login } from './logmain/login.js';
+import { dash } from './dashboard/dash.js';
 
 
 
@@ -14,9 +13,7 @@ function App() {
       <div>
         <Router>
           <Routes>
-              <Route path='/Dashboard' element={<Dashboard />}></Route>
-              <Route path='/Login' element={<Login />}></Route>
-
+              <Route path='/dashboard' element={<dash />}></Route>
           </Routes>
         </Router>
       </div>
