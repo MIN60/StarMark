@@ -1,5 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import './Login.scss';
+
 
 const mode = 'login';
 
@@ -56,9 +58,10 @@ class LoginForm extends React.Component {
             </div>
             <button className="button button--primary full-width" type="submit">{this.props.mode === 'login' ? 'Log In' : 'Sign Up'}</button>
         </form>
-        )
+        );
     }
 }
+
 
 const Input = ({ id, type, label, disabled }) => (
     <input className="form-group__input" type={type} id={id} placeholder={label} disabled={disabled}/>
@@ -76,6 +79,7 @@ const Login = () => (
         />
     </div>
 );
+
 
 ReactDOM.render( <Login/>, document.getElementById("login"));
 
